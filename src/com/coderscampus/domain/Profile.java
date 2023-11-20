@@ -1,26 +1,35 @@
 package com.coderscampus.domain;
 
-public class Profile {
-private Integer id;
-private String name;
-private String url;
+import java.time.LocalDate;
 
-public Integer getId() {
-	return id;
-}
-public void setId(Integer id) {
-	this.id = id;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getUrl() {
-	return url;
-}
-public void setUrl(String url) {
-	this.url = url;
-}
-}
+public class Profile {
+	private Integer id;
+	private String name;
+	private String url;
+	private LocalDate createdDate;
+	
+	public LocalDate getCreatedDate() {
+		return createdDate;
+	}
+	public void setCreatedDate(LocalDate createdDate) {
+		this.createdDate = createdDate;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	}
